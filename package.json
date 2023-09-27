@@ -14,8 +14,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@codemirror/lang-html": "^6.4.6",
+    "@codemirror/lang-javascript": "^6.2.1",
+    "@codemirror/lang-json": "^6.0.1",
+    "@uiw/react-codemirror": "^4.21.18",
+    "classnames": "^2.3.2",
+    "json5": "^2.2.3",
+    "less": "^4.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.21",
@@ -24,12 +32,12 @@
     "@typescript-eslint/parser": "^5.62.0",
     "@vitejs/plugin-react": "^4.0.4",
     "eslint": "^8.49.0",
-    "eslint-config-prettier": "^8.10.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.5",
     "husky": "^8.0.3",
     "lint-staged": "^13.3.0",
-    "prettier": "2.8.8",
+    "prettier": "3.0.3",
     "typescript": "5.1.6",
     "vite": "^4.4.9"
   }

@@ -1,9 +1,10 @@
+import './index.less'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import Router from './router'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <div style={{ padding: '1rem' }}>Hello world!</div>
+    <Router />
   </React.StrictMode>
 )
