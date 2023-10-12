@@ -2,6 +2,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import HTMLPrettier from './pages/HTMLPrettier'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import JSONToTypeScript from './pages/JSONToTypeScript'
 
 const router = createHashRouter([
   {
@@ -15,6 +16,10 @@ const router = createHashRouter([
   {
     path: '/html/prettier',
     element: <HTMLPrettier />
+  },
+  {
+    path: '/json/to/typescript',
+    element: <JSONToTypeScript />
   }
 ])
 

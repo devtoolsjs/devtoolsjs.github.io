@@ -12,12 +12,12 @@ const tools: Devtool[] = [
     path: '/html/prettier',
     title: 'HTML Prettier',
     description: 'A tool to beautify HTML code.'
+  },
+  {
+    path: '/json/to/typescript',
+    title: 'JSON to TypeScript',
+    description: 'A tool to convert JSON object to TypeScript type declaration.'
   }
-  // {
-  //   path: '/typescript/generator',
-  //   title: 'TypeScript Generator',
-  //   description: 'A tool to convert JSON object to TypeScript type declaration.'
-  // }
 ]
 
 export default function Home() {
