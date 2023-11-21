@@ -1,0 +1,131 @@
+.img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  user-select: none;
+}
+
+.bottomBorder {
+  margin-bottom: 64px;
+  height: 1px;
+  background: #333;
+}
+
+.selector {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.35);
+
+  box-sizing: border-box;
+
+  > div[data-role='top'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    cursor: ns-resize;
+  }
+
+  > div[data-role='bottom'] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    cursor: ns-resize;
+  }
+
+  > div[data-role='left'] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    cursor: ew-resize;
+  }
+
+  > div[data-role='right'] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    cursor: ew-resize;
+  }
+
+  > div[data-role='drag'] {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    right: 4px;
+    left: 4px;
+    cursor: move;
+    z-index: 3;
+  }
+
+  > div[data-role='border'] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  > div[data-role='top'],
+  > div[data-role='bottom'],
+  > div[data-role='left'],
+  > div[data-role='right'] {
+    z-index: 2;
+    &:hover {
+      background-color: #007fff;
+    }
+  }
+}
+
+.toolbar {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  background: #fff;
+  box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  font-size: 13px;
+  padding: 0 12px;
+  font-weight: bold;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+
+  > div {
+    flex-shrink: 0;
+    flex-grow: 0;
+    white-space: nowrap;
+  }
+
+  > div.grow {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  > button {
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+
+.picker {
+  padding: 32px;
+}

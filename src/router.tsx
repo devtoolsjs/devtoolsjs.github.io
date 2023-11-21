@@ -3,6 +3,7 @@ import HTMLPrettier from './pages/HTMLPrettier'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import JSONToTypeScript from './pages/JSONToTypeScript'
+import ImageMeasurer from './pages/ImageMeasurer'
 
 const router = createHashRouter([
   {
@@ -20,6 +21,10 @@ const router = createHashRouter([
   {
     path: '/json/to/typescript',
     element: <JSONToTypeScript />
+  },
+  {
+    path: '/image/measurer',
+    element: <ImageMeasurer />
   }
 ])
 

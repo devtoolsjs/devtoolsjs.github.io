@@ -17,6 +17,11 @@ const tools: Devtool[] = [
     path: '/json/to/typescript',
     title: 'JSON to TypeScript',
     description: 'A tool to convert JSON object to TypeScript type declaration.'
+  },
+  {
+    path: '/image/measurer',
+    title: 'Image Measurer',
+    description: 'A tool to measure image area position.'
   }
 ]
 
