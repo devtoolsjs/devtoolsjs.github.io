@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import JSONToTypeScript from './pages/JSONToTypeScript'
 import ImageMeasurer from './pages/ImageMeasurer'
+import Calendar from './pages/Calendar'
 
 const router = createHashRouter([
   {
@@ -25,6 +26,10 @@ const router = createHashRouter([
   {
     path: '/image/measurer',
     element: <ImageMeasurer />
+  },
+  {
+    path: '/calendar',
+    element: <Calendar />
   }
 ])
 

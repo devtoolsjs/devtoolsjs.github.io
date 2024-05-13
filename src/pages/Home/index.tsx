@@ -22,6 +22,11 @@ const tools: Devtool[] = [
     path: '/image/measurer',
     title: 'Image Measurer',
     description: 'A tool to measure image area position.'
+  },
+  {
+    path: '/calendar',
+    title: 'Calendar',
+    description: 'A calendar of the year.'
   }
 ]
 
